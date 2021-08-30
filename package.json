@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "compile": "protoc -I=./proto bookstore.proto --js_out=import_style=commonjs:./proto --grpc-web_out=import_style=commonjs,mode=grpcwebtext:./proto",
+    "build:server": "docker build -t grpc_server-$RANDOM . --file ./server/Dockerfile"
+  }
+}

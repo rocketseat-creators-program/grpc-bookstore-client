@@ -1,0 +1,22 @@
+version: "3.2"
+
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.17.0
+    # network_mode: host # ativar se estiver no linux
+    restart: always
+    ports:
+      - "8080:8080"
+      - "9901:9901"
+    volumes:
+      - ./client/envoy.yaml:/etc/envoy/envoy.yaml
+    depends_on:
+      - server
+
+  server:
+    # network_mode: host # ativar se estiver no linux
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    ports:
+      - "50051:50051"

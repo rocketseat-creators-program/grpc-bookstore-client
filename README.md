@@ -4,7 +4,7 @@
 
 Projeto do exemplo prático de como criar um client gRPC usando Node.js. Apresentado por [Lucas Santos](https://info.lsantos.dev).
 
-> __Atenção__: Este é o projeto completo, se você está procurando o projeto template, vá para [este repositório](https://github.com/rocketseat-experts-club/template-grpc-bookstore-client-template)
+> __Atenção__: Este é o projeto completo, se você está procurando o projeto template, vá para [este repositório](https://github.com/rocketseat-experts-club/grpc-bookstore-client-template)
 
 ## Leitura complementar
 

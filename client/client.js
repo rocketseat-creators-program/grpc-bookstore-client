@@ -2,7 +2,6 @@
 const grpc = require('@grpc/grpc-js')
 const protoLoader = require('@grpc/proto-loader')
 const path = require('path')
-const { exit } = require('process')
 
 const protoObject = protoLoader.loadSync(path.resolve(__dirname, '../proto/bookstore.proto'))
 const protoDefinition = grpc.loadPackageDefinition(protoObject)
